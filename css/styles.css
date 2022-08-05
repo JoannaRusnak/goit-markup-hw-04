@@ -38,7 +38,6 @@ body {
 	background-color: var(--backgr-color);
 	color: var(--text-color);
 	width: 100%;
-	max-width: 1600px;
 }
 
 .container {
@@ -49,7 +48,7 @@ body {
 }
 
 .section {
-	padding: 94px 0;
+	padding: 94px 0 94px 0;
 }
 
 /* HEADER */
@@ -127,16 +126,22 @@ body {
 	text-decoration: none;
 }
 
+.mail-icon,
+.phone-icon {
+	margin: 2px;
+}
+
 .header-mail-link,
 .header-phone-link {
 	color: var(--contact-color);
+	fill: var(--contact-color);
 	text-decoration: none;
 	line-height: 1.1;
 	font-size: 14px;
-	fill: var(--svg-grey);
 	font-weight: 500;
 	letter-spacing: 0.02em;	
-	display: inline;
+	display: flex;
+	align-items: center;
 }
 
 .contacts-nav {
@@ -160,32 +165,34 @@ body {
 
 /* MAIN*/
 
-.solution-button:hover,
-.solution-button:focus {
-	background-color: var(--choose-color);
-	color: var(--background-button-color);
-}
-
 .solution-button {
 	font-weight: 700;
 	font-size: 16px;
 	line-height: 1.9;
 	width: 200px;
 	height: 50px;
-	background: var(--background-button-color);
-	color: var(--button-color);
+	background: var(--choose-color);
+	color: var(--background-button-color);
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 	border-radius: 4px;
 	border: none;
 	text-align: center;
+	margin: 0 auto;
+	margin-top: 30px;
+	padding: 0;
 	display: block;
-	margin: auto;
 	letter-spacing: 0.06em;
 	cursor: pointer;
 }
 
+.baner {
+	max-width: 1600px;
+	margin: 0 auto;
+	align-content: center;
+}
+
 .container-solution {
-	height: 600;
+	height: 600px;
 	background: rgba(47, 48, 58, 0.4);
 	background-image:linear-gradient(
     to bottom,
@@ -193,6 +200,7 @@ body {
     rgba(47, 48, 58, 0.4)
 	),
     url(../images/team.jpg);
+	display: block;
 }
 
 .solution-header {
@@ -204,11 +212,11 @@ body {
 	color: var(--backgr-color);
 	display: block;
 	width: 696px;
-	margin: auto;
+	margin:0 auto;
+	padding-top: 100px;
 	text-align: center;
-	padding-top: 30px;
-	padding-bottom: 30px;
 }
+
 
 /* LOREM IPSUM part */
 
@@ -237,7 +245,6 @@ body {
 	display: flex;
 	padding-left: 15px;
 	padding-right: 15px;
-	gap: 30px;
 	justify-content: space-around;
 }
 
@@ -259,6 +266,8 @@ body {
 	margin-bottom: 0;
 }
 
+/* CZYM SIE ZAJMUJEMY */
+
 .specialize {
 	padding-top: 0px;
 	background-color: #ffffff;
@@ -279,6 +288,8 @@ body {
 	padding-bottom: 50px;
 	margin: 0;
 }
+
+/* NASZ ZESPOL */
 
 .team-background {
 	background-color: var(--background-button-color);
@@ -367,6 +378,8 @@ body {
   	cursor: pointer;
 }
 
+/* NASI KLIENCI*/
+
 .our-clients {
 	background-color: var(--backgr-color);
 }
@@ -391,7 +404,6 @@ body {
 	border-radius: 4px;
 	width: 74;
 	height: 32;
-	margin: 0 15px;
 	justify-content: center;
 	align-items: center;
 	fill: var(--svg-grey);
@@ -422,12 +434,13 @@ body {
 
 .footer {
 	background-color: var(--footer-background-color);
-	height: 252px;
+	padding-top: 60px;
+	padding-bottom: 60px;
 }
 
 .footer-section {
 	display: flex;
-	height: 198px;
+	align-items: baseline;
 }
 
 .footer-links {
@@ -438,7 +451,6 @@ body {
 }
 
 .footer-logo {
-	padding-top: 30px;
 	padding-bottom: 5px;
 	padding-left: 15px;
 }
@@ -486,7 +498,6 @@ address {
 }
 	
 .footer-social-media {
-	padding-top: 72px;
 	padding-left: 70px;
 }
 
@@ -535,6 +546,7 @@ address {
 	background-color: var(--choose-color);
 	color: var(--background-button-color);
 	border-radius: 4px;
+	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 .aside-portfolio {
