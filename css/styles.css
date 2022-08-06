@@ -129,6 +129,7 @@ body {
 .mail-icon,
 .phone-icon {
 	margin: 2px;
+	fill: currentColor;
 }
 
 .header-mail-link,
@@ -407,6 +408,10 @@ body {
 	justify-content: center;
 	align-items: center;
 	fill: var(--svg-grey);
+}
+
+.client-box svg {
+	width: 168px;
 }
 
 .client-box:not(:last-child) {
